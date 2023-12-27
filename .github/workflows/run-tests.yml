@@ -2,9 +2,9 @@ name: Run tests before merge
 
 # Triggers the workflow on pull request events to the main branch
 on:
-  pull_request:
+  push:
     branches:
-      - main
+      - master
 
 # A job to run the tests
 jobs:
