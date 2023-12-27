@@ -1,0 +1,24 @@
+version: '3'
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: sagyam/bitmosys-q423-api
+    container_name: bitmosys-q423-api
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=mongodb://sagyam:1234@mongo:27017/bitmosys-q423-db
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo:7.0.3
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=sagyam
+      - MONGO_INITDB_ROOT_PASSWORD=1234
+    volumes:
+      - ./mongo-data:/data/db
