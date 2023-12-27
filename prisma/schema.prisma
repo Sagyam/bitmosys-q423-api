@@ -10,6 +10,15 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+generator dbml {
+  provider            = "prisma-dbml-generator"
+  output              = "../documentation/dbml"
+  outputName          = "/bitmosys-q423.dbml"
+  projectName         = "bitmosys-q423-api"
+  projectDatabaseType = "MongoDB"
+  projectNote         = "This is a sample project note"
+}
+
 model Coin {
   id         String   @id @default(auto()) @map("_id") @db.ObjectId
   name       String
