@@ -20,7 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm run install
+          npm install
           npm run docs:generate
 
       - name: Deploy to GitHub Pages
