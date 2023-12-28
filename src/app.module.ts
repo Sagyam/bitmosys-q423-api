@@ -1,12 +1,17 @@
 import { Module } from '@nestjs/common';
 import { APP_GUARD } from '@nestjs/core';
 import { ThrottlerGuard, ThrottlerModule } from '@nestjs/throttler';
+import { CommonModule } from 'src/common/common.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { CoinModule } from './coin/coin.module';
+import { TransactionModule } from './transaction/transaction.module';
+import { UserModule } from './user/user.module';
+import { WalletModule } from './wallet/wallet.module';
 
 @Module({
   imports: [
+    CommonModule,
     CoinModule,
     ThrottlerModule.forRoot([
       {
@@ -25,6 +30,9 @@ import { CoinModule } from './coin/coin.module';
         limit: 100,
       },
     ]),
+    UserModule,
+    WalletModule,
+    TransactionModule,
   ],
   controllers: [AppController],
   providers: [

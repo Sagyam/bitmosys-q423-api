@@ -1,9 +1,11 @@
 import { Module } from '@nestjs/common';
-import { CoinService } from './coin.service';
+import { CommonModule } from 'src/common/common.module';
 import { CoinController } from './coin.controller';
+import { CoinService } from './coin.service';
 
 @Module({
+  imports: [CommonModule],
   controllers: [CoinController],
-  providers: [CoinService]
+  providers: [CoinService],
 })
 export class CoinModule {}
