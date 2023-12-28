@@ -21,46 +21,46 @@
 <polygon fill="#fb8072" stroke="transparent" points="406,-10 406,-30 426,-30 426,-10 406,-10"/>
 <text text-anchor="start" x="429.73" y="-15.4" font-family="Times-12" font-size="14.00"> &#160;Exports</text>
 <g id="clust1" class="cluster">
-<title>cluster_CoinModule</title>
-<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="105,-70 105,-195 391,-195 391,-70 105,-70"/>
-</g>
-<g id="clust3" class="cluster">
-<title>cluster_CoinModule_imports</title>
-<polygon fill="none" stroke="black" points="255,-78 255,-130 383,-130 383,-78 255,-78"/>
+<title>cluster_WalletModule</title>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="98,-70 98,-195 398,-195 398,-70 98,-70"/>
 </g>
 <g id="clust6" class="cluster">
-<title>cluster_CoinModule_providers</title>
-<polygon fill="none" stroke="black" points="113,-78 113,-130 247,-130 247,-78 113,-78"/>
+<title>cluster_WalletModule_providers</title>
+<polygon fill="none" stroke="black" points="242,-78 242,-130 390,-130 390,-78 242,-78"/>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_WalletModule_imports</title>
+<polygon fill="none" stroke="black" points="106,-78 106,-130 234,-130 234,-78 106,-78"/>
 </g>
 <!-- CommonModule -->
 <g id="node1" class="node">
 <title>CommonModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="374.67,-122 371.67,-126 350.67,-126 347.67,-122 263.33,-122 263.33,-86 374.67,-86 374.67,-122"/>
-<text text-anchor="middle" x="319" y="-99.8" font-family="Times,serif" font-size="14.00">CommonModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="225.67,-122 222.67,-126 201.67,-126 198.67,-122 114.33,-122 114.33,-86 225.67,-86 225.67,-122"/>
+<text text-anchor="middle" x="170" y="-99.8" font-family="Times,serif" font-size="14.00">CommonModule</text>
 </g>
-<!-- CoinModule -->
+<!-- WalletModule -->
 <g id="node2" class="node">
-<title>CoinModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="292.28,-187 289.28,-191 268.28,-191 265.28,-187 205.72,-187 205.72,-151 292.28,-151 292.28,-187"/>
-<text text-anchor="middle" x="249" y="-164.8" font-family="Times,serif" font-size="14.00">CoinModule</text>
+<title>WalletModule</title>
+<polygon fill="#8dd3c7" stroke="black" points="291.37,-187 288.37,-191 267.37,-191 264.37,-187 194.63,-187 194.63,-151 291.37,-151 291.37,-187"/>
+<text text-anchor="middle" x="243" y="-164.8" font-family="Times,serif" font-size="14.00">WalletModule</text>
 </g>
-<!-- CommonModule&#45;&gt;CoinModule -->
+<!-- CommonModule&#45;&gt;WalletModule -->
 <g id="edge1" class="edge">
-<title>CommonModule&#45;&gt;CoinModule</title>
-<path fill="none" stroke="black" d="M277.78,-122.11C277.78,-122.11 277.78,-140.99 277.78,-140.99"/>
-<polygon fill="black" stroke="black" points="274.28,-140.99 277.78,-150.99 281.28,-140.99 274.28,-140.99"/>
+<title>CommonModule&#45;&gt;WalletModule</title>
+<path fill="none" stroke="black" d="M210.2,-122.11C210.2,-122.11 210.2,-140.99 210.2,-140.99"/>
+<polygon fill="black" stroke="black" points="206.7,-140.99 210.2,-150.99 213.7,-140.99 206.7,-140.99"/>
 </g>
-<!-- CoinService -->
+<!-- WalletService -->
 <g id="node3" class="node">
-<title>CoinService</title>
-<ellipse fill="#fdb462" stroke="black" cx="180" cy="-104" rx="58.55" ry="18"/>
-<text text-anchor="middle" x="180" y="-99.8" font-family="Times,serif" font-size="14.00">CoinService</text>
+<title>WalletService</title>
+<ellipse fill="#fdb462" stroke="black" cx="316" cy="-104" rx="65.96" ry="18"/>
+<text text-anchor="middle" x="316" y="-99.8" font-family="Times,serif" font-size="14.00">WalletService</text>
 </g>
-<!-- CoinService&#45;&gt;CoinModule -->
+<!-- WalletService&#45;&gt;WalletModule -->
 <g id="edge2" class="edge">
-<title>CoinService&#45;&gt;CoinModule</title>
-<path fill="none" stroke="black" d="M222.19,-116.53C222.19,-116.53 222.19,-140.85 222.19,-140.85"/>
-<polygon fill="black" stroke="black" points="218.69,-140.85 222.19,-150.85 225.69,-140.85 218.69,-140.85"/>
+<title>WalletService&#45;&gt;WalletModule</title>
+<path fill="none" stroke="black" d="M270.85,-117.15C270.85,-117.15 270.85,-140.69 270.85,-140.69"/>
+<polygon fill="black" stroke="black" points="267.35,-140.69 270.85,-150.69 274.35,-140.69 267.35,-140.69"/>
 </g>
 </g>
 </svg>

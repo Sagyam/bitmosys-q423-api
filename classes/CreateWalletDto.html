@@ -102,7 +102,7 @@
 
 <ol class="breadcrumb">
   <li class="breadcrumb-item">Classes</li>
-  <li class="breadcrumb-item" >Coin</li>
+  <li class="breadcrumb-item" >CreateWalletDto</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -126,7 +126,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/coin/entities/coin.entity.ts</code>
+            <code>src/wallet/dto/create-wallet.dto.ts</code>
         </p>
 
 
@@ -147,22 +147,16 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#brandColor" >brandColor</a>
+                                    <span class="modifier"></span>
+                                <a href="#balance" >balance</a>
                             </li>
                             <li>
-                                <a href="#coinSymbol" >coinSymbol</a>
+                                    <span class="modifier"></span>
+                                <a href="#coinId" >coinId</a>
                             </li>
                             <li>
-                                <a href="#exchangeRate" >exchangeRate</a>
-                            </li>
-                            <li>
-                                <a href="#iconUrl" >iconUrl</a>
-                            </li>
-                            <li>
-                                <a href="#id" >id</a>
-                            </li>
-                            <li>
-                                <a href="#name" >name</a>
+                                    <span class="modifier"></span>
+                                <a href="#userId" >userId</a>
                             </li>
                         </ul>
                     </td>
@@ -187,62 +181,11 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="brandColor"></a>
+                    <a name="balance"></a>
                     <span class="name">
-                        <span ><b>brandColor</b></span>
-                        <a href="#brandColor"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="6" class="link-to-prism">src/coin/entities/coin.entity.ts:6</a></div>
-                        </td>
-                    </tr>
-
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="coinSymbol"></a>
-                    <span class="name">
-                        <span ><b>coinSymbol</b></span>
-                        <a href="#coinSymbol"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="4" class="link-to-prism">src/coin/entities/coin.entity.ts:4</a></div>
-                        </td>
-                    </tr>
-
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="exchangeRate"></a>
-                    <span class="name">
-                        <span ><b>exchangeRate</b></span>
-                        <a href="#exchangeRate"><span class="icon ion-ios-link"></span></a>
+                            <span class="modifier"></span>
+                        <span ><b>balance</b></span>
+                        <a href="#balance"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
@@ -252,9 +195,18 @@
 
                     </td>
                 </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @IsPositive({message: &#x27;Balance must be a positive number&#x27;})<br />
+                        </code>
+                    </td>
+                </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="7" class="link-to-prism">src/coin/entities/coin.entity.ts:7</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="5" class="link-to-prism">src/wallet/dto/create-wallet.dto.ts:5</a></div>
                         </td>
                     </tr>
 
@@ -265,10 +217,11 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="iconUrl"></a>
+                    <a name="coinId"></a>
                     <span class="name">
-                        <span ><b>iconUrl</b></span>
-                        <a href="#iconUrl"><span class="icon ion-ios-link"></span></a>
+                            <span class="modifier"></span>
+                        <span ><b>coinId</b></span>
+                        <a href="#coinId"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
@@ -278,9 +231,18 @@
 
                     </td>
                 </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @IsMongoId({message: &#x27;Coin ID must be a valid Mongo ID&#x27;})<br />
+                        </code>
+                    </td>
+                </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="5" class="link-to-prism">src/coin/entities/coin.entity.ts:5</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/wallet/dto/create-wallet.dto.ts:8</a></div>
                         </td>
                     </tr>
 
@@ -291,10 +253,11 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="id"></a>
+                    <a name="userId"></a>
                     <span class="name">
-                        <span ><b>id</b></span>
-                        <a href="#id"><span class="icon ion-ios-link"></span></a>
+                            <span class="modifier"></span>
+                        <span ><b>userId</b></span>
+                        <a href="#userId"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
@@ -304,35 +267,18 @@
 
                     </td>
                 </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="2" class="link-to-prism">src/coin/entities/coin.entity.ts:2</a></div>
-                        </td>
-                    </tr>
-
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="name"></a>
-                    <span class="name">
-                        <span ><b>name</b></span>
-                        <a href="#name"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @IsMongoId({message: &#x27;User ID must be a valid Mongo ID&#x27;})<br />
+                        </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="3" class="link-to-prism">src/coin/entities/coin.entity.ts:3</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/wallet/dto/create-wallet.dto.ts:11</a></div>
                         </td>
                     </tr>
 
@@ -351,13 +297,17 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">export class Coin {
-  id: string;
-  name: string;
-  coinSymbol: string;
-  iconUrl: string;
-  brandColor: string;
-  exchangeRate: number;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { IsMongoId, IsPositive } from &#x27;class-validator&#x27;;
+
+export class CreateWalletDto {
+  @IsPositive({ message: &#x27;Balance must be a positive number&#x27; })
+  balance: number;
+
+  @IsMongoId({ message: &#x27;Coin ID must be a valid Mongo ID&#x27; })
+  coinId: string;
+
+  @IsMongoId({ message: &#x27;User ID must be a valid Mongo ID&#x27; })
+  userId: string;
 }
 </code></pre>
     </div>
@@ -397,7 +347,7 @@
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
-            var COMPODOC_CURRENT_PAGE_URL = 'Coin.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'CreateWalletDto.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 

@@ -95,7 +95,7 @@
 
 <ol class="breadcrumb">
   <li class="breadcrumb-item">Controllers</li>
-  <li class="breadcrumb-item" >CoinController</li>
+  <li class="breadcrumb-item" >TransactionController</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -119,14 +119,14 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/coin/coin.controller.ts</code>
+            <code>src/transaction/transaction.controller.ts</code>
         </p>
 
             <p class="comment">
                 <h3>Prefix</h3>
             </p>
             <p class="comment">
-                <code>coin</code>
+                <code>transaction</code>
             </p>
 
 
@@ -149,8 +149,6 @@
                         <ul class="index-list">
                             <li>
                                     <span class="modifier"></span>
-                                    <span class="modifier"></span>
-                                    <span class="modifier">Async</span>
                                 <a href="#create" >create</a>
                             </li>
                             <li>
@@ -161,14 +159,6 @@
                             <li>
                                     <span class="modifier"></span>
                                 <a href="#findOne" >findOne</a>
-                            </li>
-                            <li>
-                                    <span class="modifier"></span>
-                                <a href="#remove" >remove</a>
-                            </li>
-                            <li>
-                                    <span class="modifier"></span>
-                                <a href="#update" >update</a>
                             </li>
                         </ul>
                     </td>
@@ -194,8 +184,6 @@
                     <a name="create"></a>
                     <span class="name">
                             <span class="modifier"></span>
-                            <span class="modifier"></span>
-                            <span class="modifier">Async</span>
                         <span ><b>create</b></span>
                         <a href="#create"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -204,7 +192,7 @@
             <tr>
                 <td class="col-md-4">
                         <span class="modifier-icon icon ion-ios-reset"></span>
-                    <code>create(createCoinDto: <a href="../classes/CreateCoinDto.html" target="_self">CreateCoinDto</a>)</code>
+                    <code>create(createTransactionDto: <a href="../classes/CreateTransactionDto.html" target="_self">CreateTransactionDto</a>)</code>
                 </td>
             </tr>
 
@@ -212,14 +200,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Post()<br />@UsePipes(new ImageValidationPipe())<br /></code>
+                    <code>@Post()<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="26"
-                                    class="link-to-prism">src/coin/coin.controller.ts:26</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="13"
+                                    class="link-to-prism">src/transaction/transaction.controller.ts:13</a></div>
                         </td>
                     </tr>
 
@@ -240,9 +228,9 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                                <td>createCoinDto</td>
+                                                <td>createTransactionDto</td>
                                             <td>
-                                                            <code><a href="../classes/CreateCoinDto.html" target="_self" >CreateCoinDto</a></code>
+                                                            <code><a href="../classes/CreateTransactionDto.html" target="_self" >CreateTransactionDto</a></code>
                                             </td>
 
                                             <td>
@@ -255,7 +243,7 @@
                                 </table>
                             </div>
                         <div class="io-description">
-                            <b>Returns : </b>        <code><a href="../classes/Coin.html" target="_self" >Promise&lt;Coin&gt;</a></code>
+                            <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
 
                         </div>
                             <div class="io-description">
@@ -295,8 +283,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="31"
-                                    class="link-to-prism">src/coin/coin.controller.ts:31</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="18"
+                                    class="link-to-prism">src/transaction/transaction.controller.ts:18</a></div>
                         </td>
                     </tr>
 
@@ -332,7 +320,7 @@
                                 </table>
                             </div>
                         <div class="io-description">
-                            <b>Returns : </b>    <code>Promise&lt;PaginatedResponseDTO&lt;Coin&gt;&gt;</code>
+                            <b>Returns : </b>    <code>Promise&lt;PaginatedResponseDTO&lt;Transaction&gt;&gt;</code>
 
                         </div>
                             <div class="io-description">
@@ -371,8 +359,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="38"
-                                    class="link-to-prism">src/coin/coin.controller.ts:38</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="25"
+                                    class="link-to-prism">src/transaction/transaction.controller.ts:25</a></div>
                         </td>
                     </tr>
 
@@ -408,171 +396,7 @@
                                 </table>
                             </div>
                         <div class="io-description">
-                            <b>Returns : </b>        <code><a href="../classes/Coin.html" target="_self" >Promise&lt;Coin&gt;</a></code>
-
-                        </div>
-                            <div class="io-description">
-                                
-                            </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="remove"></a>
-                    <span class="name">
-                            <span class="modifier"></span>
-                        <span ><b>remove</b></span>
-                        <a href="#remove"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span>
-                    <code>remove(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
-                </td>
-            </tr>
-
-            <tr>
-                <td class="col-md-4">
-                    <b>Decorators : </b>
-                    <br />
-                    <code>@Delete(&#x27;:id&#x27;)<br /></code>
-                </td>
-            </tr>
-
-                    <tr>
-                        <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="51"
-                                    class="link-to-prism">src/coin/coin.controller.ts:51</a></div>
-                        </td>
-                    </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-
-                            <div class="io-description">
-                                <b>Parameters :</b>
-                                
-                                <table class="params">
-                                    <thead>
-                                        <tr>
-                                            <td>Name</td>
-                                                <td>Type</td>
-                                            <td>Optional</td>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                                <td>id</td>
-                                            <td>
-                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-                                            </td>
-
-                                            <td>
-                                                    No
-                                            </td>
-
-
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        <div class="io-description">
-                            <b>Returns : </b>        <code><a href="../classes/Coin.html" target="_self" >Promise&lt;Coin&gt;</a></code>
-
-                        </div>
-                            <div class="io-description">
-                                
-                            </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="update"></a>
-                    <span class="name">
-                            <span class="modifier"></span>
-                        <span ><b>update</b></span>
-                        <a href="#update"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span>
-                    <code>update(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, updateCoinDto: <a href="../classes/UpdateCoinDto.html" target="_self">UpdateCoinDto</a>)</code>
-                </td>
-            </tr>
-
-            <tr>
-                <td class="col-md-4">
-                    <b>Decorators : </b>
-                    <br />
-                    <code>@Patch(&#x27;:id&#x27;)<br /></code>
-                </td>
-            </tr>
-
-                    <tr>
-                        <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="43"
-                                    class="link-to-prism">src/coin/coin.controller.ts:43</a></div>
-                        </td>
-                    </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-
-                            <div class="io-description">
-                                <b>Parameters :</b>
-                                
-                                <table class="params">
-                                    <thead>
-                                        <tr>
-                                            <td>Name</td>
-                                                <td>Type</td>
-                                            <td>Optional</td>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                                <td>id</td>
-                                            <td>
-                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-                                            </td>
-
-                                            <td>
-                                                    No
-                                            </td>
-
-
-                                        </tr>
-                                        <tr>
-                                                <td>updateCoinDto</td>
-                                            <td>
-                                                            <code><a href="../classes/UpdateCoinDto.html" target="_self" >UpdateCoinDto</a></code>
-                                            </td>
-
-                                            <td>
-                                                    No
-                                            </td>
-
-
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        <div class="io-description">
-                            <b>Returns : </b>        <code><a href="../classes/Coin.html" target="_self" >Promise&lt;Coin&gt;</a></code>
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
                         </div>
                             <div class="io-description">
@@ -586,58 +410,32 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
-  Body,
-  Controller,
-  Delete,
-  Get,
-  Param,
-  Patch,
-  Post,
-  Query,
-  UsePipes,
-} from &#x27;@nestjs/common&#x27;;
-import { Coin } from &#x27;src/coin/entities/coin.entity&#x27;;
-import { ImageValidationPipe } from &#x27;src/coin/pipes/image-validation.pipe&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Body, Controller, Get, Param, Post, Query } from &#x27;@nestjs/common&#x27;;
 import { PaginatedRequestDTO } from &#x27;src/common/dto/pagination-request.dto&#x27;;
 import { PaginatedResponseDTO } from &#x27;src/common/dto/pagination-response.dto&#x27;;
-import { CoinService } from &#x27;./coin.service&#x27;;
-import { CreateCoinDto } from &#x27;./dto/create-coin.dto&#x27;;
-import { UpdateCoinDto } from &#x27;./dto/update-coin.dto&#x27;;
+import { Transaction } from &#x27;src/transaction/entities/transaction.entity&#x27;;
+import { CreateTransactionDto } from &#x27;./dto/create-transaction.dto&#x27;;
+import { TransactionService } from &#x27;./transaction.service&#x27;;
 
-@Controller(&#x27;coin&#x27;)
-export class CoinController {
-  constructor(private readonly coinService: CoinService) {}
+@Controller(&#x27;transaction&#x27;)
+export class TransactionController {
+  constructor(private readonly transactionService: TransactionService) {}
 
   @Post()
-  @UsePipes(new ImageValidationPipe())
-  async create(@Body() createCoinDto: CreateCoinDto): Promise&lt;Coin&gt; {
-    return await this.coinService.create(createCoinDto);
+  create(@Body() createTransactionDto: CreateTransactionDto): Promise&lt;any&gt; {
+    return this.transactionService.create(createTransactionDto);
   }
 
   @Get()
   async findAll(
     @Query() paginatedRequest: PaginatedRequestDTO,
-  ): Promise&lt;PaginatedResponseDTO&lt;Coin&gt;&gt; {
-    return this.coinService.findAllWithPagination(paginatedRequest);
+  ): Promise&lt;PaginatedResponseDTO&lt;Transaction&gt;&gt; {
+    return this.transactionService.findAllWithPagination(paginatedRequest);
   }
 
   @Get(&#x27;:id&#x27;)
-  findOne(@Param(&#x27;id&#x27;) id: string): Promise&lt;Coin&gt; {
-    return this.coinService.findOne(id);
-  }
-
-  @Patch(&#x27;:id&#x27;)
-  update(
-    @Param(&#x27;id&#x27;) id: string,
-    @Body() updateCoinDto: UpdateCoinDto,
-  ): Promise&lt;Coin&gt; {
-    return this.coinService.update(id, updateCoinDto);
-  }
-
-  @Delete(&#x27;:id&#x27;)
-  remove(@Param(&#x27;id&#x27;) id: string): Promise&lt;Coin&gt; {
-    return this.coinService.remove(id);
+  findOne(@Param(&#x27;id&#x27;) id: string) {
+    return this.transactionService.findOne(id);
   }
 }
 </code></pre>
@@ -685,7 +483,7 @@ export class CoinController {
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'controller';
-            var COMPODOC_CURRENT_PAGE_URL = 'CoinController.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'TransactionController.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 

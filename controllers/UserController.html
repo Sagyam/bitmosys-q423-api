@@ -86,19 +86,16 @@
                    <compodoc-menu mode="normal"></compodoc-menu>
                </div>
                <!-- START CONTENT -->
-               <div class="content injectable">
+               <div class="content controller">
                    <div class="content-data">
 
 
 
 
 
-
-
-
 <ol class="breadcrumb">
-  <li class="breadcrumb-item">Injectables</li>
-  <li class="breadcrumb-item" >CoinService</li>
+  <li class="breadcrumb-item">Controllers</li>
+  <li class="breadcrumb-item" >UserController</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -122,8 +119,16 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/coin/coin.service.ts</code>
+            <code>src/user/user.controller.ts</code>
         </p>
+
+            <p class="comment">
+                <h3>Prefix</h3>
+            </p>
+            <p class="comment">
+                <code>user</code>
+            </p>
+
 
 
 
@@ -143,20 +148,23 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                    <span class="modifier">Async</span>
+                                    <span class="modifier"></span>
                                 <a href="#create" >create</a>
                             </li>
                             <li>
-                                    <span class="modifier">Async</span>
-                                <a href="#findAllWithPagination" >findAllWithPagination</a>
+                                    <span class="modifier"></span>
+                                <a href="#findAll" >findAll</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                 <a href="#findOne" >findOne</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                 <a href="#remove" >remove</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                 <a href="#update" >update</a>
                             </li>
                         </ul>
@@ -171,79 +179,6 @@
     </table>
 </section>
 
-            <section data-compodoc="block-constructor">
-    <h3 id="constructor">Constructor</h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-<code>constructor(paginationService: <a href="../injectables/PaginationService.html" target="_self">PaginationService&lt;Coin&gt;</a>, prisma: <a href="../injectables/PrismaService.html" target="_self">PrismaService</a>, cloudinaryService: <a href="../injectables/CloudinaryService.html" target="_self">CloudinaryService</a>)</code>
-                    </td>
-                </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/coin/coin.service.ts:12</a></div>
-                            </td>
-                        </tr>
-
-                <tr>
-                    <td class="col-md-4">
-                            <div>
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>paginationService</td>
-                                                  
-                                                        <td>
-                                                                        <code><a href="../injectables/PaginationService.html" target="_self" >PaginationService&lt;Coin&gt;</a></code>
-                                                        </td>
-                                                  
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
-                                                </tr>
-                                                <tr>
-                                                        <td>prisma</td>
-                                                  
-                                                        <td>
-                                                                        <code><a href="../injectables/PrismaService.html" target="_self" >PrismaService</a></code>
-                                                        </td>
-                                                  
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
-                                                </tr>
-                                                <tr>
-                                                        <td>cloudinaryService</td>
-                                                  
-                                                        <td>
-                                                                        <code><a href="../injectables/CloudinaryService.html" target="_self" >CloudinaryService</a></code>
-                                                        </td>
-                                                  
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-</section>
-
             <section data-compodoc="block-methods">
     
     <h3 id="methods">
@@ -255,7 +190,7 @@
                 <td class="col-md-4">
                     <a name="create"></a>
                     <span class="name">
-                            <span class="modifier">Async</span>
+                            <span class="modifier"></span>
                         <span ><b>create</b></span>
                         <a href="#create"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -264,15 +199,22 @@
             <tr>
                 <td class="col-md-4">
                         <span class="modifier-icon icon ion-ios-reset"></span>
-                    <code>create(createCoinDto: <a href="../classes/CreateCoinDto.html" target="_self">CreateCoinDto</a>)</code>
+                    <code>create(createUserDto: <a href="../classes/CreateUserDto.html" target="_self">CreateUserDto</a>)</code>
                 </td>
             </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Post()<br /></code>
+                </td>
+            </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="19"
-                                    class="link-to-prism">src/coin/coin.service.ts:19</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="23"
+                                    class="link-to-prism">src/user/user.controller.ts:23</a></div>
                         </td>
                     </tr>
 
@@ -293,9 +235,9 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                                <td>createCoinDto</td>
+                                                <td>createUserDto</td>
                                             <td>
-                                                            <code><a href="../classes/CreateCoinDto.html" target="_self" >CreateCoinDto</a></code>
+                                                            <code><a href="../classes/CreateUserDto.html" target="_self" >CreateUserDto</a></code>
                                             </td>
 
                                             <td>
@@ -308,7 +250,7 @@
                                 </table>
                             </div>
                         <div class="io-description">
-                            <b>Returns : </b>        <code><a href="../classes/Coin.html" target="_self" >Promise&lt;Coin&gt;</a></code>
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
                         </div>
                             <div class="io-description">
@@ -322,26 +264,33 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="findAllWithPagination"></a>
+                    <a name="findAll"></a>
                     <span class="name">
-                            <span class="modifier">Async</span>
-                        <span ><b>findAllWithPagination</b></span>
-                        <a href="#findAllWithPagination"><span class="icon ion-ios-link"></span></a>
+                            <span class="modifier"></span>
+                        <span ><b>findAll</b></span>
+                        <a href="#findAll"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
                         <span class="modifier-icon icon ion-ios-reset"></span>
-                    <code>findAllWithPagination(paginatedRequest: <a href="../classes/PaginatedRequestDTO.html" target="_self">PaginatedRequestDTO</a>)</code>
+                    <code>findAll(paginatedRequest: <a href="../classes/PaginatedRequestDTO.html" target="_self">PaginatedRequestDTO</a>)</code>
                 </td>
             </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Get()<br /></code>
+                </td>
+            </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="45"
-                                    class="link-to-prism">src/coin/coin.service.ts:45</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="28"
+                                    class="link-to-prism">src/user/user.controller.ts:28</a></div>
                         </td>
                     </tr>
 
@@ -377,7 +326,7 @@
                                 </table>
                             </div>
                         <div class="io-description">
-                            <b>Returns : </b>    <code>Promise&lt;PaginatedResponseDTO&lt;Coin&gt;&gt;</code>
+                            <b>Returns : </b>    <code>Promise&lt;PaginatedResponseDTO&lt;User&gt;&gt;</code>
 
                         </div>
                             <div class="io-description">
@@ -393,6 +342,7 @@
                 <td class="col-md-4">
                     <a name="findOne"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                         <span ><b>findOne</b></span>
                         <a href="#findOne"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -400,15 +350,23 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>findOne(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                        <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>findOne(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                 </td>
             </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Get(&#x27;:id&#x27;)<br /></code>
+                </td>
+            </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="54"
-                                    class="link-to-prism">src/coin/coin.service.ts:54</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="35"
+                                    class="link-to-prism">src/user/user.controller.ts:35</a></div>
                         </td>
                     </tr>
 
@@ -444,7 +402,7 @@
                                 </table>
                             </div>
                         <div class="io-description">
-                            <b>Returns : </b>        <code><a href="../classes/Coin.html" target="_self" >Promise&lt;Coin&gt;</a></code>
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
                         </div>
                             <div class="io-description">
@@ -460,6 +418,7 @@
                 <td class="col-md-4">
                     <a name="remove"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                         <span ><b>remove</b></span>
                         <a href="#remove"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -467,15 +426,23 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>remove(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                        <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>remove(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                 </td>
             </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Delete(&#x27;:id&#x27;)<br /></code>
+                </td>
+            </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="74"
-                                    class="link-to-prism">src/coin/coin.service.ts:74</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="45"
+                                    class="link-to-prism">src/user/user.controller.ts:45</a></div>
                         </td>
                     </tr>
 
@@ -511,7 +478,7 @@
                                 </table>
                             </div>
                         <div class="io-description">
-                            <b>Returns : </b>        <code><a href="../classes/Coin.html" target="_self" >Promise&lt;Coin&gt;</a></code>
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
                         </div>
                             <div class="io-description">
@@ -527,6 +494,7 @@
                 <td class="col-md-4">
                     <a name="update"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                         <span ><b>update</b></span>
                         <a href="#update"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -534,15 +502,23 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>update(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, updateCoinDto: <a href="../classes/UpdateCoinDto.html" target="_self">UpdateCoinDto</a>)</code>
+                        <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>update(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, updateUserDto: <a href="../classes/UpdateUserDto.html" target="_self">UpdateUserDto</a>)</code>
                 </td>
             </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Patch(&#x27;:id&#x27;)<br /></code>
+                </td>
+            </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="60"
-                                    class="link-to-prism">src/coin/coin.service.ts:60</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="40"
+                                    class="link-to-prism">src/user/user.controller.ts:40</a></div>
                         </td>
                     </tr>
 
@@ -575,9 +551,9 @@
 
                                         </tr>
                                         <tr>
-                                                <td>updateCoinDto</td>
+                                                <td>updateUserDto</td>
                                             <td>
-                                                            <code><a href="../classes/UpdateCoinDto.html" target="_self" >UpdateCoinDto</a></code>
+                                                            <code><a href="../classes/UpdateUserDto.html" target="_self" >UpdateUserDto</a></code>
                                             </td>
 
                                             <td>
@@ -590,7 +566,7 @@
                                 </table>
                             </div>
                         <div class="io-description">
-                            <b>Returns : </b>        <code><a href="../classes/Coin.html" target="_self" >Promise&lt;Coin&gt;</a></code>
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
                         </div>
                             <div class="io-description">
@@ -600,95 +576,64 @@
             </tr>
         </tbody>
     </table>
-</section>
-
-    </div>
+</section>    </div>
 
 
     <div class="tab-pane fade  tab-source-code" id="source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@nestjs/common&#x27;;
-import { Coin } from &#x27;src/coin/entities/coin.entity&#x27;;
-import { CloudinaryService } from &#x27;src/common/cloudinary.service&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  Param,
+  Patch,
+  Post,
+  Query,
+} from &#x27;@nestjs/common&#x27;;
 import { PaginatedRequestDTO } from &#x27;src/common/dto/pagination-request.dto&#x27;;
 import { PaginatedResponseDTO } from &#x27;src/common/dto/pagination-response.dto&#x27;;
-import { PaginationService } from &#x27;src/common/pagination.service&#x27;;
-import { PrismaService } from &#x27;src/common/prisma.service&#x27;;
-import { CreateCoinDto } from &#x27;./dto/create-coin.dto&#x27;;
-import { UpdateCoinDto } from &#x27;./dto/update-coin.dto&#x27;;
+import { User } from &#x27;src/user/entities/user.entity&#x27;;
+import { CreateUserDto } from &#x27;./dto/create-user.dto&#x27;;
+import { UpdateUserDto } from &#x27;./dto/update-user.dto&#x27;;
+import { UserService } from &#x27;./user.service&#x27;;
 
-@Injectable()
-export class CoinService {
-  constructor(
-    private readonly paginationService: PaginationService&lt;Coin&gt;,
-    private prisma: PrismaService,
-    private cloudinaryService: CloudinaryService,
-  ) {}
+@Controller(&#x27;user&#x27;)
+export class UserController {
+  constructor(private readonly userService: UserService) {}
 
-  async create(createCoinDto: CreateCoinDto): Promise&lt;Coin&gt; {
-    const { name, coinSymbol, icon, exchangeRate, brandColor } &#x3D; createCoinDto;
-
-    // Upload image to Cloudinary and get the URL
-    const iconUrl &#x3D; await this.cloudinaryService.uploadImage(icon);
-
-    // Save the record in Prisma
-    const createdCoin &#x3D; await this.prisma.coin.create({
-      data: {
-        name,
-        coinSymbol,
-        iconUrl,
-        exchangeRate,
-        brandColor,
-        wallets: {
-          create: [],
-        },
-        transactions: {
-          create: [],
-        },
-      },
-    });
-
-    return createdCoin;
+  @Post()
+  create(@Body() createUserDto: CreateUserDto) {
+    return this.userService.create(createUserDto);
   }
 
-  async findAllWithPagination(
-    paginatedRequest: PaginatedRequestDTO,
-  ): Promise&lt;PaginatedResponseDTO&lt;Coin&gt;&gt; {
-    return this.paginationService.findAllWithPagination(
-      &#x27;Coin&#x27;,
-      paginatedRequest,
-    );
+  @Get()
+  findAll(
+    @Query() paginatedRequest: PaginatedRequestDTO,
+  ): Promise&lt;PaginatedResponseDTO&lt;User&gt;&gt; {
+    return this.userService.findAll(paginatedRequest);
   }
 
-  findOne(id: string): Promise&lt;Coin&gt; {
-    return this.prisma.coin.findUnique({
-      where: { id },
-    });
+  @Get(&#x27;:id&#x27;)
+  findOne(@Param(&#x27;id&#x27;) id: string) {
+    return this.userService.findOne(id);
   }
 
-  update(id: string, updateCoinDto: UpdateCoinDto): Promise&lt;Coin&gt; {
-    const { name, coinSymbol, exchangeRate, brandColor } &#x3D; updateCoinDto;
-
-    return this.prisma.coin.update({
-      where: { id },
-      data: {
-        name,
-        coinSymbol,
-        exchangeRate,
-        brandColor,
-      },
-    });
+  @Patch(&#x27;:id&#x27;)
+  update(@Param(&#x27;id&#x27;) id: string, @Body() updateUserDto: UpdateUserDto) {
+    return this.userService.update(id, updateUserDto);
   }
 
-  remove(id: string): Promise&lt;Coin&gt; {
-    return this.prisma.coin.delete({
-      where: { id },
-    });
+  @Delete(&#x27;:id&#x27;)
+  remove(@Param(&#x27;id&#x27;) id: string) {
+    return this.userService.remove(id);
   }
 }
 </code></pre>
     </div>
-
 </div>
+
+
+
 
 
 
@@ -727,8 +672,8 @@ export class CoinService {
 
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
-            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
-            var COMPODOC_CURRENT_PAGE_URL = 'CoinService.html';
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'controller';
+            var COMPODOC_CURRENT_PAGE_URL = 'UserController.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 
