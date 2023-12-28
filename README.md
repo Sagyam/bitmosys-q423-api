@@ -6,7 +6,6 @@ Backend for Bitmosys-q423.
 - [x] Automatic API Documentation
 - [x] Automatic API Testing
 - [x] Automatic building and pushing of docker image to docker hub
-- [x] Automatic deployment to render.com
 
 ## Links
 [Frontend](https://bitmosys-q423.vercel.app)
